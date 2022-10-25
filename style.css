@@ -15,6 +15,7 @@ section {
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 10px;
 }
 
 .form-input {
@@ -32,13 +33,17 @@ section {
 
 .form-input input {
 	border-radius: 16px;
-	border: 1px solid gray;
+	border: 1px solid #f2e8ff;
 	-webkit-border-radius: 16px;
 	-moz-border-radius: 16px;
 	-ms-border-radius: 16px;
 	-o-border-radius: 16px;
 	padding: 20px;
-	background-color: rgba(128, 128, 128, 0.055);
+	background-color: #fcfdfe;
+}
+
+.form-input ::placeholder {
+	color: #a0a3bd;
 }
 
 .form-input label {

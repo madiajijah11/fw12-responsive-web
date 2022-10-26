@@ -12,7 +12,6 @@ body {
 
 .container section {
 	position: relative;
-	flex: 1;
 }
 
 section p {
@@ -36,14 +35,14 @@ section p {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: left;
 	margin-bottom: 20px;
+	position: relative;
+	box-sizing: border-box;
 	font-family: "Mulish";
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 20px;
-	position: relative;
 }
 
 .form-input input {
@@ -119,8 +118,13 @@ section p {
 	margin: 0;
 }
 
+.left-side {
+	flex: 2;
+}
+
 .right-side {
 	padding: 100px 85px;
+	flex: 1;
 }
 
 .right-side h1 {
@@ -138,4 +142,8 @@ section p {
 	line-height: 19px;
 	text-align: center;
 	margin-bottom: 10px;
+}
+
+.signin-link a {
+	color: #5f2eea;
 }

@@ -54,11 +54,14 @@ section p {
 	margin-bottom: 10px;
 }
 
-.form-input .icon {
-	/*icon right side inside input*/
+div.form-input .icon {
 	position: absolute;
 	right: 20px;
-	bottom: 20px;
+	bottom: 15px;
+}
+
+div.form-input {
+	position: relative;
 }
 
 .btn-signup {

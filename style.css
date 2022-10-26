@@ -4,10 +4,24 @@ body {
 	font-family: "Inter";
 }
 
-main {
+.container {
 	display: flex;
 	flex-direction: row;
 	height: 100vh;
+}
+
+.container section {
+	position: relative;
+	flex: 1;
+}
+
+section p {
+	margin: 10px 0 25px 0;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+	color: #aaaaaa;
 }
 
 .form-control {
@@ -77,10 +91,10 @@ main {
 }
 
 .image-wrap {
-	background-image: url("/assets/image-1.png");
+	background-image: url("/assets/background.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 100%;
+	width: auto;
 	height: 100%;
 }
 
@@ -92,6 +106,7 @@ main {
 	align-items: center;
 	width: 100%;
 	height: 100%;
+	position: absolute;
 }
 
 .image-overlay h1 {
@@ -104,17 +119,8 @@ main {
 	margin: 0;
 }
 
-.left-side {
-	flex: 2;
-}
-
 .right-side {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: stretch;
-	padding: 100px;
-	flex: 1;
+	padding: 100px 85px;
 }
 
 .right-side h1 {

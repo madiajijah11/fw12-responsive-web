@@ -14,7 +14,16 @@ body {
 	position: relative;
 }
 
-section p {
+section.left-side p {
+	margin: 10px 0 25px 0;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+	color: #aaaaaa;
+}
+
+section.right-side p {
 	margin: 10px 0 25px 0;
 	font-style: normal;
 	font-weight: 400;
@@ -54,14 +63,14 @@ section p {
 	margin-bottom: 10px;
 }
 
+div.form-input {
+	position: relative;
+}
+
 div.form-input .icon {
 	position: absolute;
 	right: 20px;
 	bottom: 15px;
-}
-
-div.form-input {
-	position: relative;
 }
 
 .btn-signup {

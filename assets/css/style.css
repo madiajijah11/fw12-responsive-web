@@ -90,7 +90,7 @@ section p {
 }
 
 .image-wrap {
-	background-image: url("/assets/background.png");
+	background-image: url("/assets/images/background.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: auto;

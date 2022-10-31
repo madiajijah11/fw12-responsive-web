@@ -425,7 +425,7 @@ a.link {
     float: left;
 }
 
-section.first-section {
+.first-section {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -433,7 +433,7 @@ section.first-section {
     margin: 0 130px;
 }
 
-section.first-section div {
+.first-section div {
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -441,7 +441,7 @@ section.first-section div {
     flex: 1;
 }
 
-section.first-section p {
+.first-section p {
     font-family: "Mulish";
     font-style: normal;
     font-weight: 400;
@@ -451,7 +451,7 @@ section.first-section p {
     margin-bottom: 10px;
 }
 
-section.first-section h1 {
+.first-section h1 {
     font-family: "Mulish";
     font-style: normal;
     font-weight: 700;
@@ -461,7 +461,7 @@ section.first-section h1 {
     margin-top: 0;
 }
 
-section.second-section {
+.second-section {
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -469,7 +469,7 @@ section.second-section {
     background-color: #f5f6f8;
 }
 
-section.second-section .header {
+.second-section .header {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -478,7 +478,7 @@ section.second-section .header {
     height: 100%;
 }
 
-section.second-section .header :nth-child(1) {
+.second-section .header :nth-child(1) {
     font-family: "Mulish";
     font-style: normal;
     font-weight: 700;
@@ -491,7 +491,7 @@ section.second-section .header :nth-child(1) {
     flex: 1;
 }
 
-section.second-section .header :nth-child(2) {
+.second-section .header :nth-child(2) {
     font-family: "Mulish";
     font-style: normal;
     font-weight: 700;
@@ -504,15 +504,16 @@ section.second-section .header :nth-child(2) {
     text-align: right;
 }
 
-section.second-section .movie-now-showing {
-    display: flex;
+.second-section .movie-now-showing {
+    display: inline-flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin: 0 35px 50px 35px;
+    position: relative;
 }
 
-section.second-section .movie-now-showing .movie {
+.second-section .movie-now-showing .movie {
     border: 2px solid white;
     background-color: #f7f8f9;
     border-radius: 8px;
@@ -522,20 +523,104 @@ section.second-section .movie-now-showing .movie {
     -o-border-radius: 8px;
     margin: 0px 24px;
     padding: 32px;
+    position: relative;
 }
 
-section.second-section .movie-now-showing .movie img {
+.second-section .movie-now-showing .movie.active:hover {
+    background-color: white;
+    box-shadow: 0px 8px 30px rgba(186, 186, 186, 0.25);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-section .movie-now-showing .movie.active > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.second-section .movie-now-showing .movie.active:hover > div {
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    box-shadow: 0px 8px 30px rgba(186, 186, 186, 0.25);
+    border-radius: 8px;
+    width: 100%;
+    height: 60%;
+    margin: 0;
+    padding: 0;
+}
+
+.second-section .movie-now-showing .movie.active div div:nth-child(1) {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.15px;
+    max-width: 200px;
+    margin-top: 10px;
+}
+
+.second-section .movie-now-showing .movie.active div p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    color: #a0a3bd;
+}
+
+.second-section .movie-now-showing .movie.active div button {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: white;
+    color: #5f2eea;
+    border: 1px solid #5f2eea;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin: 20px 0 0 0;
+    padding: 10px 20px;
+    width: 70%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.second-section .movie-now-showing .movie img {
     width: 100%;
 }
 
-section.third-section {
+.third-section {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
 }
 
-section.third-section .header {
+.third-section .header {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -544,7 +629,7 @@ section.third-section .header {
     height: 100%;
 }
 
-section.third-section .header :nth-child(1) {
+.third-section .header :nth-child(1) {
     font-family: "Mulish";
     font-style: normal;
     font-weight: 700;
@@ -554,7 +639,7 @@ section.third-section .header :nth-child(1) {
     flex: 1;
 }
 
-section.third-section .header :nth-child(2) {
+.third-section .header :nth-child(2) {
     font-family: "Mulish";
     font-style: normal;
     font-weight: 700;
@@ -567,7 +652,7 @@ section.third-section .header :nth-child(2) {
     text-align: right;
 }
 
-section.third-section .movie-now-showing {
+.movie-now-showing {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -575,7 +660,7 @@ section.third-section .movie-now-showing {
     margin: 0 35px 50px 35px;
 }
 
-section.third-section .movie-now-showing .movie {
+.movie-now-showing .movie {
     border: 2px solid #f5f6f8;
     border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -590,11 +675,11 @@ section.third-section .movie-now-showing .movie {
     padding: 32px 32px 0 32px;
 }
 
-section.third-section .movie-now-showing .movie img {
+.movie-now-showing .movie img {
     width: 100%;
 }
 
-section.third-section .movie-now-showing .movie div {
+.movie-now-showing .movie div {
     font-family: "Mulish";
     font-style: normal;
     font-weight: 700;
@@ -603,7 +688,7 @@ section.third-section .movie-now-showing .movie div {
     margin-top: 10px;
 }
 
-section.third-section .movie-now-showing .movie p {
+.movie-now-showing .movie p {
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 400;
@@ -614,7 +699,7 @@ section.third-section .movie-now-showing .movie p {
     color: #a0a3bd;
 }
 
-section.third-section .movie-now-showing .movie button {
+.movie-now-showing .movie button {
     font-family: "Mulish";
     font-style: normal;
     font-weight: 400;
@@ -667,7 +752,7 @@ section.third-section .movie-now-showing .movie button {
 }
 
 .movie-month .btn-movie {
-    background-color: #f7f8f9;
+    background-color: transparent;
     border: 2px solid #5f2eea;
     border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -823,10 +908,58 @@ section .email-subscription p {
 
 .footer div.social-media a {
     text-decoration: none;
+    color: black;
 }
 
 .footer div.social-media em {
     margin-right: 10px;
+}
+
+.order-page {
+    background-color: #f5f6f8;
+    display: flex;
+    flex-direction: column;
+}
+
+.order-page > div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px 130px;
+}
+
+.order-page > div:nth-child(1) > div:nth-child(1) {
+    flex: 1;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.25px;
+}
+
+.order-page > div:nth-child(1) > div:nth-child(2) {
+    float: right;
+}
+
+.order-page > div:nth-child(1) > div:nth-child(2) select {
+    border: 1px solid #dedede;
+    border-radius: 16px;
+    padding: 10px;
+}
+
+.order-page > div:nth-child(1) > div:nth-child(2) input {
+    border: 1px solid #dedede;
+    border-radius: 16px;
+    padding: 10px;
+}
+
+.order-page > div:nth-child(3) {
+    background-color: white;
+    padding: 45px 0;
+    margin: 0 130px 40px 130px;
+    width: fit-content;
+    align-self: center;
 }
 
 @media screen and (max-width: 880px) {

@@ -316,7 +316,7 @@ section.second-section .header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 0 200px;
+    margin: 0 130px;
     width: auto;
     height: 100%;
 }
@@ -382,7 +382,7 @@ section.third-section .header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 0 200px;
+    margin: 0 130px;
     width: auto;
     height: 100%;
 }
@@ -532,7 +532,7 @@ section .email-subscription {
     align-items: center;
     justify-content: center;
     padding: 50px 0;
-    margin: 0 200px;
+    margin: 0 130px;
     border: 1px solid none;
     box-shadow: 0px 16px 32px rgba(186, 186, 186, 0.3);
     -webkit-box-shadow: 0px 16px 32px rgba(186, 186, 186, 0.3);
@@ -613,56 +613,54 @@ section .email-subscription p {
 }
 
 .footer {
+    padding: 80px 130px;
+}
+
+.footer > div:nth-child(1) {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 50px 200px;
-    justify-content: space-between;
 }
 
-.footer .menu {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: flex-start;
+.footer > div:nth-child(1) > div {
+    flex: 1;
 }
 
-.footer .sponsor {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: flex-start;
+.footer > div:nth-child(1) > div:nth-child(1) {
+    flex: 2;
 }
 
-.footer .sponsor img {
-    margin-bottom: 10px;
+.footer > div:nth-child(1) > div:nth-child(1) p {
+    max-width: 284px;
+    line-height: 32px;
 }
 
-.footer .social-media {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: flex-start;
+.footer div:nth-child(1) > div ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-.footer .social-media a {
-    margin-bottom: 10px;
+.footer div:nth-child(1) > div span {
+    display: block;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+.footer div:nth-child(1) > div ul li {
+    margin: 10px 0;
+}
+
+.footer > div:nth-child(2) {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.footer div.social-media a {
     text-decoration: none;
 }
 
-.footer .social-media a em {
+.footer div.social-media em {
     margin-right: 10px;
-}
-
-div.copyright {
-    text-align: center;
-    font-family: "Mulish";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 0.5px;
-    margin-bottom: 30px;
 }
 
 @media screen and (max-width: 880px) {

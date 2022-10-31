@@ -373,6 +373,16 @@ a.link {
     color: white;
 }
 
+.nav-container .nav-action div.signed {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-container .nav-action div.signed div:nth-child(1) {
+    margin-right: 60px;
+}
+
 section.first-section {
     display: flex;
     flex-direction: row;
@@ -856,12 +866,12 @@ section .email-subscription p {
     }
 
     div.bullet::after {
-    content: "";
-    display: block;
-    width: 1px;
-    height: 20px;
-    background-color: white;
-    position: absolute;
-    top: 100%;
-}
+        content: "";
+        display: block;
+        width: 1px;
+        height: 20px;
+        background-color: white;
+        position: absolute;
+        top: 100%;
+    }
 }

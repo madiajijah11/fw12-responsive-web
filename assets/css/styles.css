@@ -322,7 +322,7 @@ a.link {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 36px 130px;
+    margin: 10px 130px;
 }
 
 .nav-container .nav-menu {
@@ -916,20 +916,20 @@ section .email-subscription p {
     margin-right: 10px;
 }
 
-.order-page {
+.view-all-page {
     background-color: #f5f6f8;
     display: flex;
     flex-direction: column;
 }
 
-.order-page > div:nth-child(1) {
+.view-all-page > div:nth-child(1) {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 40px 130px;
 }
 
-.order-page > div:nth-child(1) > div:nth-child(1) {
+.view-all-page > div:nth-child(1) > div:nth-child(1) {
     flex: 1;
     font-family: "Mulish";
     font-style: normal;
@@ -939,23 +939,23 @@ section .email-subscription p {
     letter-spacing: 0.25px;
 }
 
-.order-page > div:nth-child(1) > div:nth-child(2) {
+.view-all-page > div:nth-child(1) > div:nth-child(2) {
     float: right;
 }
 
-.order-page > div:nth-child(1) > div:nth-child(2) select {
+.view-all-page > div:nth-child(1) > div:nth-child(2) select {
     border: 1px solid #dedede;
     border-radius: 16px;
     padding: 10px;
 }
 
-.order-page > div:nth-child(1) > div:nth-child(2) input {
+.view-all-page > div:nth-child(1) > div:nth-child(2) input {
     border: 1px solid #dedede;
     border-radius: 16px;
     padding: 10px;
 }
 
-.order-page > div:nth-child(3) {
+.view-all-page > div:nth-child(3) {
     background-color: white;
     padding: 45px 0;
     margin: 0 130px 40px 130px;
@@ -963,18 +963,18 @@ section .email-subscription p {
     align-self: center;
 }
 
-.movie-details-pages > div:nth-child(1) {
+.movie-details-page > div:nth-child(1) {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 40px 130px;
 }
 
-.movie-details-pages > div:nth-child(1) > div:nth-child(2) {
+.movie-details-page > div:nth-child(1) > div:nth-child(2) {
     margin-left: 50px;
 }
 
-.movie-details-pages > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+.movie-details-page > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
     font-family: "Mulish";
     font-style: normal;
     font-weight: 700;
@@ -984,7 +984,7 @@ section .email-subscription p {
     margin-bottom: 10px;
 }
 
-.movie-details-pages > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
+.movie-details-page > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
     font-family: "Mulish";
     font-style: normal;
     font-weight: 400;
@@ -995,13 +995,13 @@ section .email-subscription p {
     margin-bottom: 20px;
 }
 
-.movie-details-pages > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) {
+.movie-details-page > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.movie-details-pages
+.movie-details-page
     > div:nth-child(1)
     > div:nth-child(2)
     > div:nth-child(3)
@@ -1009,7 +1009,7 @@ section .email-subscription p {
     margin-right: 40px;
 }
 
-.movie-details-pages
+.movie-details-page
     > div:nth-child(1)
     > div:nth-child(2)
     > div:nth-child(3)
@@ -1024,7 +1024,7 @@ section .email-subscription p {
     color: #8692a6;
 }
 
-.movie-details-pages
+.movie-details-page
     > div:nth-child(1)
     > div:nth-child(2)
     > div:nth-child(3)
@@ -1040,7 +1040,7 @@ section .email-subscription p {
     margin-bottom: 20px;
 }
 
-.movie-details-pages
+.movie-details-page
     > div:nth-child(1)
     > div:nth-child(2)
     > div:nth-child(3)
@@ -1055,7 +1055,7 @@ section .email-subscription p {
     color: #8692a6;
 }
 
-.movie-details-pages
+.movie-details-page
     > div:nth-child(1)
     > div:nth-child(2)
     > div:nth-child(3)
@@ -1071,7 +1071,7 @@ section .email-subscription p {
     margin-bottom: 20px;
 }
 
-.movie-details-pages
+.movie-details-page
     > div:nth-child(1)
     > div:nth-child(2)
     > div:nth-child(3)
@@ -1086,7 +1086,7 @@ section .email-subscription p {
     color: #8692a6;
 }
 
-.movie-details-pages
+.movie-details-page
     > div:nth-child(1)
     > div:nth-child(2)
     > div:nth-child(3)
@@ -1102,7 +1102,7 @@ section .email-subscription p {
     margin-bottom: 20px;
 }
 
-.movie-details-pages
+.movie-details-page
     > div:nth-child(1)
     > div:nth-child(2)
     > div:nth-child(3)
@@ -1117,7 +1117,7 @@ section .email-subscription p {
     color: #8692a6;
 }
 
-.movie-details-pages
+.movie-details-page
     > div:nth-child(1)
     > div:nth-child(2)
     > div:nth-child(3)
@@ -1133,7 +1133,7 @@ section .email-subscription p {
     margin-bottom: 20px;
 }
 
-.movie-details-pages
+.movie-details-page
     > div:nth-child(1)
     > div:nth-child(2)
     > div:nth-child(5)
@@ -1147,7 +1147,7 @@ section .email-subscription p {
     color: #000000;
 }
 
-.movie-details-pages
+.movie-details-page
     > div:nth-child(1)
     > div:nth-child(2)
     > div:nth-child(5)
@@ -1162,15 +1162,15 @@ section .email-subscription p {
     text-align: justify;
 }
 
-.movie-details-pages-2 {
+.movie-details-page-2 {
     background-color: #f5f6f8;
 }
 
-.movie-details-pages-2 > div:nth-child(1) {
+.movie-details-page-2 > div:nth-child(1) {
     padding: 50px 130px;
 }
 
-.movie-details-pages-2 > div:nth-child(1) > div:nth-child(1) {
+.movie-details-page-2 > div:nth-child(1) > div:nth-child(1) {
     text-align: center;
     font-family: "Mulish";
     font-style: normal;
@@ -1181,19 +1181,19 @@ section .email-subscription p {
     color: #14142b;
 }
 
-.movie-details-pages-2 > div:nth-child(1) > div:nth-child(2) {
+.movie-details-page-2 > div:nth-child(1) > div:nth-child(2) {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
 }
 
-.movie-details-pages-2 > div:nth-child(1) > div:nth-child(2) .input {
+.movie-details-page-2 > div:nth-child(1) > div:nth-child(2) .input {
     position: relative;
     margin: 20px;
 }
 
-.movie-details-pages-2
+.movie-details-page-2
     > div:nth-child(1)
     > div:nth-child(2)
     .input
@@ -1203,7 +1203,7 @@ section .email-subscription p {
     left: 20px;
 }
 
-.movie-details-pages-2
+.movie-details-page-2
     > div:nth-child(1)
     > div:nth-child(2)
     .input
@@ -1213,7 +1213,7 @@ section .email-subscription p {
     right: 20px;
 }
 
-.movie-details-pages-2 > div:nth-child(1) > div:nth-child(2) .input input {
+.movie-details-page-2 > div:nth-child(1) > div:nth-child(2) .input input {
     background: #eff0f6;
     padding: 20px 40px;
     border: none;
@@ -1224,17 +1224,14 @@ section .email-subscription p {
     -o-border-radius: 6px;
 }
 
-/* .movie-details-pages-2 > div:nth-child(3) {
+/* .movie-details-page-2 > div:nth-child(3) {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 } */
 
-.movie-details-pages-2
-    > div:nth-child(1)
-    > div:nth-child(3)
-    > div:nth-child(1) {
+.movie-details-page-2 > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1242,10 +1239,7 @@ section .email-subscription p {
     margin: 30px;
 }
 
-.movie-details-pages-2
-    > div:nth-child(1)
-    > div:nth-child(3)
-    > div:nth-child(2) {
+.movie-details-page-2 > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1253,7 +1247,7 @@ section .email-subscription p {
     margin: 30px;
 }
 
-.movie-details-pages-2 > div:nth-child(1) > div:nth-child(3) div.card {
+.movie-details-page-2 > div:nth-child(1) > div:nth-child(3) div.card {
     background: #ffffff;
     border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -1264,7 +1258,7 @@ section .email-subscription p {
     margin: 20px;
 }
 
-.movie-details-pages-2
+.movie-details-page-2
     > div:nth-child(1)
     > div:nth-child(3)
     div.card
@@ -1274,7 +1268,7 @@ section .email-subscription p {
     align-items: center;
 }
 
-.movie-details-pages-2
+.movie-details-page-2
     > div:nth-child(1)
     > div:nth-child(3)
     div.card
@@ -1284,7 +1278,7 @@ section .email-subscription p {
     flex: 1;
 }
 
-.movie-details-pages-2
+.movie-details-page-2
     > div:nth-child(1)
     > div:nth-child(3)
     div.card
@@ -1294,7 +1288,7 @@ section .email-subscription p {
     flex: 1;
 }
 
-.movie-details-pages-2
+.movie-details-page-2
     > div:nth-child(1)
     > div:nth-child(3)
     div.card
@@ -1310,7 +1304,7 @@ section .email-subscription p {
     color: #000000;
 }
 
-.movie-details-pages-2
+.movie-details-page-2
     > div:nth-child(1)
     > div:nth-child(3)
     div.card
@@ -1326,7 +1320,7 @@ section .email-subscription p {
     color: #6e7191;
 }
 
-.movie-details-pages-2 div.card div.grid {
+.movie-details-page-2 div.card div.grid {
     display: grid;
     grid-gap: 1px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1335,7 +1329,7 @@ section .email-subscription p {
     margin: 0 30px;
 }
 
-.movie-details-pages-2 div.card div.grid div {
+.movie-details-page-2 div.card div.grid div {
     font-family: "Mulish";
     font-style: normal;
     font-weight: 600;
@@ -1347,7 +1341,7 @@ section .email-subscription p {
     letter-spacing: 0.75px;
 }
 
-.movie-details-pages-2
+.movie-details-page-2
     > div:nth-child(1)
     > div:nth-child(3)
     div.card
@@ -1357,7 +1351,7 @@ section .email-subscription p {
     align-items: center;
 }
 
-.movie-details-pages-2
+.movie-details-page-2
     > div:nth-child(1)
     > div:nth-child(3)
     div.card
@@ -1367,7 +1361,7 @@ section .email-subscription p {
     padding: 0 30px;
 }
 
-.movie-details-pages-2
+.movie-details-page-2
     > div:nth-child(1)
     > div:nth-child(3)
     div.card
@@ -1385,7 +1379,7 @@ section .email-subscription p {
     flex: 1;
 }
 
-.movie-details-pages-2
+.movie-details-page-2
     > div:nth-child(1)
     > div:nth-child(3)
     div.card
@@ -1402,7 +1396,7 @@ section .email-subscription p {
     flex: 1;
 }
 
-.movie-details-pages-2
+.movie-details-page-2
     > div:nth-child(1)
     > div:nth-child(3)
     div.card
@@ -1411,7 +1405,7 @@ section .email-subscription p {
     margin: 40px;
 }
 
-.movie-details-pages-2
+.movie-details-page-2
     > div:nth-child(1)
     > div:nth-child(3)
     div.card
@@ -1429,7 +1423,7 @@ section .email-subscription p {
     padding: 15px 60px;
 }
 
-.movie-details-pages-2 > div:nth-child(1) > div:nth-child(4) {
+.movie-details-page-2 > div:nth-child(1) > div:nth-child(4) {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1437,14 +1431,498 @@ section .email-subscription p {
     text-align: center;
 }
 
-.movie-details-pages-2 > div:nth-child(1) > div:nth-child(4) div {
+.movie-details-page-2 > div:nth-child(1) > div:nth-child(4) div {
     flex: 1;
 }
 
-.movie-details-pages-2 > div:nth-child(1) > div:nth-child(4) hr {
+.movie-details-page-2 > div:nth-child(1) > div:nth-child(4) hr {
     border: none;
     border-bottom: 1px solid #dedede;
-    transform: rotate(180deg);
+}
+
+.order-page {
+    background-color: #f5f6f8;
+}
+
+.order-page .layout {
+    padding: 40px 130px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.order-page .layout > div:nth-child(1) {
+    flex: 2;
+}
+
+.order-page .layout > div:nth-child(2) {
+    flex: 1;
+}
+
+.order-page .layout > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25px;
+    color: #14142b;
+}
+
+.order-page .layout > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) {
+    background-color: #ffffff;
+    padding: 35px;
+    margin: 35px 35px 35px 0;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+/* .order-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(1)
+    > div:nth-child(2)
+    div {
+    flex: 1;
+} */
+
+.order-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(1)
+    > div:nth-child(2)
+    > div:nth-child(1) {
+    flex: 1;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25px;
+    color: #000000;
+}
+
+.order-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(1)
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div {
+    background-color: #eff0f6;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.75px;
+    color: #5f2eea;
+    padding: 4px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    background: #eff0f7;
+    border: 8px solid #eff0f7;
+}
+
+.order-page .layout > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25px;
+    color: #14142b;
+}
+
+.order-page .layout > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
+    background-color: #ffffff;
+    padding: 100px;
+    margin: 35px 35px 35px 0;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    justify-content: center;
+}
+
+.order-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(1)
+    > div:nth-child(1) {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.75px;
+    color: #4e4b66;
+}
+
+.order-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(1)
+    > div:nth-child(2)
+    hr {
+    border: none;
+    border-bottom: 4px solid #d6d8e7;
+    background: #d6d8e7;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.grid-seat {
+    display: flex;
+}
+
+.left-grid-seat {
+    flex: 1;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(8, 20px);
+    grid-template-rows: repeat(8, 20px);
+}
+
+.left-grid-seat div {
+    background-color: #d6d8e7;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.left-grid-seat .seat {
+    background-color: transparent;
+    text-align: center;
+}
+
+.left-grid-seat .selected {
+    background-color: #5f2eea;
+}
+
+.left-grid-seat .sold {
+    background: #6e7191;
+}
+
+.right-grid-seat {
+    flex: 1;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(8, 20px);
+    grid-template-rows: repeat(8, 20px);
+}
+
+.right-grid-seat div {
+    background-color: #d6d8e7;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.right-grid-seat .seat {
+    background-color: transparent;
+    text-align: center;
+}
+
+.right-grid-seat .selected {
+    background-color: #5f2eea;
+}
+
+.right-grid-seat .sold {
+    background: #6e7191;
+}
+
+.order-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(1)
+    > div:nth-child(4) {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.75px;
+    color: #000000;
+    margin: 20px 0;
+}
+
+.order-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(1)
+    > div:nth-child(5) {
+    display: flex;
+    flex-direction: row;
+}
+
+.order-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(1)
+    > div:nth-child(5)
+    div {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+.order-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(1)
+    > div:nth-child(5)
+    .seat-key {
+    display: grid;
+    grid-template-columns: repeat(1, 20px);
+    grid-template-rows: repeat(1, 20px);
+    gap: 5px;
+}
+
+.order-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(1)
+    > div:nth-child(5)
+    > div:nth-child(1)
+    > div:nth-child(1)
+    > div {
+    background: #d6d8e7;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin: 0;
+    padding: 0;
+}
+
+.order-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(1)
+    > div:nth-child(5)
+    > div:nth-child(2)
+    > div:nth-child(1)
+    > div {
+    background: #5f2eea;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin: 0;
+    padding: 0;
+}
+
+.order-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(1)
+    > div:nth-child(5)
+    > div:nth-child(3)
+    > div:nth-child(1)
+    > div {
+    background: #6e7191;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin: 0;
+    padding: 0;
+}
+
+.order-page .layout > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 35px;
+}
+
+.order-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(2)
+    > div:nth-child(3)
+    div {
+    flex: 1;
+}
+.order-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(2)
+    > div:nth-child(3)
+    > div:nth-child(1)
+    a {
+    border: 2px solid #5f2eea;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.75px;
+    color: #5f2eea;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.order-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(2)
+    > div:nth-child(3)
+    > div:nth-child(2)
+    a {
+    border: 2px solid #5f2eea;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.75px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #5f2eea;
+    color: #ffffff;
+    float: right;
+}
+
+.order-page .layout > div:nth-child(2) {
+    /* margin-top: -30%; */
+}
+
+.order-page .layout > div:nth-child(2) > div:nth-child(1) {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25px;
+    color: #14142b;
+    margin-bottom: 20px;
+}
+
+.order-page .layout > div:nth-child(2) > div:nth-child(2) {
+    background: #ffffff;
+    box-shadow: 0px 8px 16px rgba(186, 186, 186, 0.24);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.order-page .layout > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.75px;
+    color: #14142b;
+    margin: 10px 0 30px 0;
+}
+
+.order-page
+    .layout
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(3)
+    div {
+    display: flex;
+    flex-direction: row;
+}
+
+.order-page
+    .layout
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(3)
+    div
+    div {
+    flex: 1;
+}
+
+.order-page
+    .layout
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(3)
+    div
+    div:nth-child(2) {
+    align-items: center;
+    justify-content: end;
 }
 
 @media screen and (max-width: 880px) {

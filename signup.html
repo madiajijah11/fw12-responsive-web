@@ -24,13 +24,37 @@
             <section class="right-side" aria-label="right">
                 <div class="form-wrap">
                     <div>
-                        <h1>Sign In</h1>
-                        <p>
-                            Sign in with your data that you entered during your
-                            registration
-                        </p>
+                        <h1>Sign Up</h1>
+                        <p>Fill your additional details</p>
                     </div>
                     <form action="" method="post" class="form-control">
+                        <div class="form-input">
+                            <label for="firstName">First Name</label>
+                            <input
+                                type="text"
+                                name="firstName"
+                                id="firstName"
+                                placeholder="Write your first name"
+                            />
+                        </div>
+                        <div class="form-input">
+                            <label for="lastName">Last Name</label>
+                            <input
+                                type="text"
+                                name="lastName"
+                                id="lastName"
+                                placeholder="Write your last name"
+                            />
+                        </div>
+                        <div class="form-input">
+                            <label for="phoneNumber">Phone Number</label>
+                            <input
+                                type="text"
+                                name="phoneNumber"
+                                id="phoneNumber"
+                                placeholder="Write your phone number"
+                            />
+                        </div>
                         <div class="form-input">
                             <label for="email">Email</label>
                             <input
@@ -50,14 +74,10 @@
                             />
                             <em class="fa-regular fa-eye icon"></em>
                         </div>
-                        <a class="btn-signup" href="homepage.html"> Sign In </a>
+                        <a class="btn-signup" href="homepage.html">Sign Up</a>
                     </form>
                     <div class="link">
-                        Forgot your password?
-                        <a href="forgot-password.html">Reset Now</a>
-                    </div>
-                    <div class="link">
-                        Don't have an account? <a href="signup.html">Sign Up</a>
+                        Already have account? <a href="signin.html">Sign In</a>
                     </div>
                 </div>
             </section>

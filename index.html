@@ -12,75 +12,248 @@
         />
     </head>
     <body>
-        <main class="container">
-            <section class="left-side" aria-label="left">
-                <div class="image-wrap">
-                    <div class="image-overlay">
-                        <img src="./assets/images/logo.png" alt="text" />
-                        <h1>wait, watch, wow!</h1>
+        <nav>
+            <div class="nav-container">
+                <div>
+                    <a href="index.html">
+                        <img
+                            src="/assets/images/brand-logo.png"
+                            alt="brand-logo"
+                            class="brand-logo"
+                            width="100%"
+                        />
+                    </a>
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="view-all.html">List Movie</a></li>
+                    </ul>
+                </div>
+                <div class="nav-action">
+                    <ul>
+                        <li>
+                            <a href="signup.html">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <section class="first-section" aria-label="first">
+                <div class="desc-homepage">
+                    <p>Nearest Cinema, Newest Movie,</p>
+                    <h1>Find out now!</h1>
+                </div>
+                <div>
+                    <img
+                        src="/assets/images/homepage.png"
+                        alt="Banner"
+                        width="100%"
+                    />
+                </div>
+            </section>
+
+            <section class="second-section" aria-label="second">
+                <div class="header">
+                    <div>Now Showing</div>
+                    <div>View all</div>
+                </div>
+                <div class="movie-now-showing">
+                    <div class="movie">
+                        <img
+                            src="/assets/images/Rectangle-119.png"
+                            alt="SpiderMan"
+                        />
+                    </div>
+                    <div class="movie">
+                        <img
+                            src="/assets/images/Rectangle-119-1.png"
+                            alt="LionKing"
+                        />
+                    </div>
+                    <div class="movie">
+                        <img
+                            src="/assets/images/Rectangle-119-2.png"
+                            alt="JohnWick"
+                        />
+                    </div>
+                    <div class="movie">
+                        <img
+                            src="/assets/images/Rectangle-119.png"
+                            alt="SpiderMan"
+                        />
+                    </div>
+                    <div class="movie">
+                        <img
+                            src="/assets/images/Rectangle-119-1.png"
+                            alt="LionKing"
+                        />
                     </div>
                 </div>
             </section>
-            <section class="right-side" aria-label="right">
-                <div class="form-wrap">
-                    <div>
-                        <h1>Sign Up</h1>
-                        <p>Fill your additional details</p>
+
+            <section class="third-section" aria-label="third">
+                <div class="header">
+                    <div>Upcoming Movies</div>
+                    <div>View all</div>
+                </div>
+                <div class="movie-month">
+                    <button class="movie-btn">September</button>
+                    <button class="btn-movie">October</button>
+                    <button class="btn-movie">November</button>
+                    <button class="btn-movie">December</button>
+                    <button class="btn-movie">January</button>
+                    <button class="btn-movie">February</button>
+                    <button class="btn-movie">March</button>
+                    <button class="btn-movie">April</button>
+                    <button class="btn-movie">May</button>
+                </div>
+                <div class="movie-now-showing">
+                    <div class="movie">
+                        <img
+                            src="/assets/images/Rectangle-139.png"
+                            alt="BlackWidow"
+                        />
+                        <div>Black Widow</div>
+                        <p>Action, Adventure, Sci-Fi</p>
+                        <div>
+                            <a href="movie-details.html"> Details </a>
+                        </div>
                     </div>
-                    <form action="" method="post" class="form-control">
-                        <div class="form-input">
-                            <label for="firstName">First Name</label>
-                            <input
-                                type="text"
-                                name="firstName"
-                                id="firstName"
-                                placeholder="Write your first name"
-                            />
+                    <div class="movie">
+                        <img
+                            src="/assets/images/Rectangle-139-1.png"
+                            alt="TheWitches"
+                        />
+                        <div>The Witches</div>
+                        <p>Adventure, Comedy, Family</p>
+                        <div>
+                            <a href="movie-details.html"> Details </a>
                         </div>
-                        <div class="form-input">
-                            <label for="lastName">Last Name</label>
-                            <input
-                                type="text"
-                                name="lastName"
-                                id="lastName"
-                                placeholder="Write your last name"
-                            />
-                        </div>
-                        <div class="form-input">
-                            <label for="phoneNumber">Phone Number</label>
-                            <input
-                                type="text"
-                                name="phoneNumber"
-                                id="phoneNumber"
-                                placeholder="Write your phone number"
-                            />
-                        </div>
-                        <div class="form-input">
-                            <label for="email">Email</label>
-                            <input
-                                type="email"
-                                name="email"
-                                id="email"
-                                placeholder="Write your email"
-                            />
-                        </div>
-                        <div class="form-input">
-                            <label for="password">Password</label>
-                            <input
-                                type="password"
-                                name="password"
-                                id="password"
-                                placeholder="Write your password"
-                            />
-                            <em class="fa-regular fa-eye icon"></em>
-                        </div>
-                        <a class="btn-signup" href="homepage.html">Sign Up</a>
-                    </form>
-                    <div class="link">
-                        Already have account? <a href="signin.html">Sign In</a>
                     </div>
+                    <div class="movie">
+                        <img
+                            src="/assets/images/Rectangle-139-2.png"
+                            alt="Tenet"
+                        />
+                        <div>Tenet</div>
+                        <p>Action, Sci-Fi</p>
+                        <div>
+                            <a href="movie-details.html"> Details </a>
+                        </div>
+                    </div>
+                    <div class="movie">
+                        <img
+                            src="/assets/images/Rectangle-139.png"
+                            alt="BlackWidow"
+                        />
+                        <div>Black Widow</div>
+                        <p>Action, Adventure, Sci-Fi</p>
+                        <div>
+                            <a href="movie-details.html"> Details </a>
+                        </div>
+                    </div>
+                    <div class="movie">
+                        <img
+                            src="/assets/images/Rectangle-139-1.png"
+                            alt="TheWitches"
+                        />
+                        <div>The Witches</div>
+                        <p>Adventure, Comedy, Family</p>
+                        <div>
+                            <a href="movie-details.html"> Details </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="email-subscription">
+                    <div class="be-the">Be the vanguard of the</div>
+                    <div class="moviegoers">Moviegoers</div>
+                    <div class="input-group">
+                        <input
+                            class="input-email"
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Type your email"
+                        />
+                        <button class="btn-movie">Join Now</button>
+                    </div>
+                    <p>By joining you as Tickitz member,</p>
+                    <p>we will always send you the latest update via email.</p>
                 </div>
             </section>
         </main>
+
+        <footer class="footer">
+            <div>
+                <div>
+                    <img src="/assets/images/brand-logo.png" alt="logo" />
+                    <p>
+                        Stop waiting in line. Buy tickets conveniently, watch
+                        movies quietly.
+                    </p>
+                </div>
+                <div class="menu">
+                    <span>Explore</span>
+                    <ul>
+                        <li>Home</li>
+                        <li>List Movie</li>
+                    </ul>
+                </div>
+                <div class="sponsor">
+                    <span>Our Sponsor</span>
+                    <ul>
+                        <li>
+                            <img src="/assets/images/Vector.png" alt="ebuid" />
+                        </li>
+                        <li>
+                            <img
+                                src="/assets/images/Vector-1.png"
+                                alt="cineone21"
+                            />
+                        </li>
+                        <li>
+                            <img
+                                src="/assets/images/Vector-2.png"
+                                alt="hiflix"
+                            />
+                        </li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <span>Follow us</span>
+                    <ul>
+                        <li>
+                            <a href="#"
+                                ><em class="fab fa-facebook-f"></em>Tickitz
+                                Cinema id</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><em class="fab fa-instagram"></em>tickitz.id</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><em class="fab fa-twitter"></em>tickitz.id</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><em class="fab fa-youtube"></em>Tickitz Cinema
+                                id</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">© 2020 Tickitz. All Rights Reserved.</div>
+        </footer>
     </body>
 </html>

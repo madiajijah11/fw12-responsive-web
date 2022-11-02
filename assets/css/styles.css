@@ -289,7 +289,7 @@ div.bullet.active {
 }
 
 .left-side {
-    flex: 2;
+    flex: 1;
 }
 
 .right-side {
@@ -1448,8 +1448,8 @@ section .email-subscription p {
     padding: 40px 130px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     position: relative;
 }
 
@@ -1848,9 +1848,9 @@ section .email-subscription p {
     float: right;
 }
 
-.order-page .layout > div:nth-child(2) {
-    /* margin-top: -30%; */
-}
+/* .order-page .layout > div:nth-child(2) {
+    margin-top: -30%;
+} */
 
 .order-page .layout > div:nth-child(2) > div:nth-child(1) {
     font-family: "Mulish";
@@ -1878,6 +1878,7 @@ section .email-subscription p {
     align-items: center;
     justify-content: center;
     padding: 20px;
+    margin-top: 35px;
 }
 
 .order-page .layout > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
@@ -1912,6 +1913,16 @@ section .email-subscription p {
     div
     div {
     flex: 1;
+    margin-bottom: 5px;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.75px;
+    color: #6b6b6b;
 }
 
 .order-page
@@ -1921,8 +1932,75 @@ section .email-subscription p {
     > div:nth-child(3)
     div
     div:nth-child(2) {
-    align-items: center;
     justify-content: end;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    text-align: right;
+    letter-spacing: 0.75px;
+    color: #14142b;
+}
+
+.order-page .layout > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) {
+    width: 100%;
+}
+
+.order-page .layout > div:nth-child(2) > div:nth-child(2) > hr {
+    border: none;
+    border-bottom: 2px solid #e6e6e6;
+    width: 100%;
+}
+
+.order-page .layout > div:nth-child(2) > div:nth-child(2) > div:nth-child(5) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.order-page
+    .layout
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(5)
+    div {
+    flex: 1;
+}
+
+.order-page
+    .layout
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(5)
+    > div:nth-child(1) {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.75px;
+    color: #000000;
+}
+
+.order-page
+    .layout
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(5)
+    > div:nth-child(2) {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: right;
+    letter-spacing: 0.25px;
+    color: #5f2eea;
 }
 
 @media screen and (max-width: 880px) {

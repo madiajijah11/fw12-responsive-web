@@ -2022,10 +2022,71 @@ section .email-subscription p {
     -o-border-radius: 6px;
 }
 
-.payment-page .layout > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) hr {
+.payment-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(1)
+    > div:nth-child(2)
+    hr {
     border: none;
     border-bottom: 2px solid #e6e6e6;
     width: 100%;
+}
+
+.payment-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(1)
+    > div:nth-child(2)
+    > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.payment-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(1)
+    > div:nth-child(2)
+    > div
+    > div {
+    flex: 1;
+}
+
+.payment-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(1)
+    > div:nth-child(2)
+    > div
+    > div:nth-child(1) {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25px;
+    color: #6b6b6b;
+}
+
+.payment-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(1)
+    > div:nth-child(2)
+    > div
+    > div:nth-child(2) {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: right;
+    letter-spacing: 0.25px;
+    color: #000000;
 }
 
 .payment-page
@@ -2078,6 +2139,172 @@ section .email-subscription p {
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
     justify-content: center;
+}
+
+.payment-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.payment-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(1)
+    div {
+    border: 2px solid #dedede;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.payment-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.payment-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(2)
+    div {
+    border: 2px solid #dedede;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+    margin: 20px 20px;
+}
+
+.payment-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.payment-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(3)
+    div {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.payment-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(3)
+    div
+    hr {
+    border: none;
+    border-bottom: 2px solid #dedede;
+}
+
+.payment-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(3)
+    > div:nth-child(2) {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.75px;
+    color: #a0a3bd;
+    max-width: 50px;
+}
+
+.payment-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(4) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.payment-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(4)
+    div {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.75px;
+    color: #6e7191;
+}
+
+.payment-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(4)
+    > div
+    a {
+    text-decoration: none;
+    font-family: "Mulish";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0.75px;
+    text-align: center;
+    color: #5f2eea;
 }
 
 .payment-page .layout > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) {
@@ -2170,13 +2397,111 @@ section .email-subscription p {
     -o-border-radius: 6px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     padding: 35px;
     margin-top: 35px;
 }
 
+.payment-page .layout > div:nth-child(2) > div:nth-child(2) div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+}
 
+.payment-page .layout > div:nth-child(2) > div:nth-child(2) div label {
+    margin-bottom: 10px;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25px;
+    color: #696f79;
+}
+
+.payment-page .layout > div:nth-child(2) > div:nth-child(2) div input {
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    padding: 20px;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.75px;
+    color: #4e4b66;
+}
+
+.payment-page
+    .layout
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(3)
+    > div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #dedede;
+}
+
+.payment-page
+    .layout
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(3)
+    > div:nth-child(2)
+    > input:nth-child(1) {
+    border: none;
+    border-right: 1px solid #dedede;
+    width: 50px;
+}
+
+.payment-page
+    .layout
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(3)
+    > div:nth-child(2)
+    > input:nth-child(2) {
+    border: none;
+    border-left: 1px solid #dedede;
+    width: 100%;
+}
+
+.payment-page .layout > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) {
+    display: flex;
+    flex-direction: row;
+    background: rgba(244, 183, 64, 0.3);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    align-items: center;
+    padding: 20px;
+}
+
+.payment-page
+    .layout
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(4)
+    > em:nth-child(1) {
+    margin-right: 10px;
+    color: #f4b740;
+}
+
+.payment-page
+    .layout
+    > div:nth-child(2)
+    > div:nth-child(2)
+    > div:nth-child(4)
+    > div:nth-child(2) {
+    text-align: center;
+    margin-bottom: 0;
+}
 
 @media screen and (max-width: 880px) {
     .container .left-side {

@@ -2633,7 +2633,12 @@ section .email-subscription p {
     color: #14142b;
 }
 
-.profile-page .layout > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+.profile-page
+    .layout
+    > div:nth-child(2)
+    > div:nth-child(1)
+    > div:nth-child(2)
+    a {
     font-family: "Mulish";
     font-style: normal;
     font-weight: 400;
@@ -2641,6 +2646,7 @@ section .email-subscription p {
     line-height: 34px;
     letter-spacing: 0.75px;
     color: #aaaaaa;
+    text-decoration: none;
 }
 
 .profile-page .layout > div:nth-child(2) > div:nth-child(2) {
@@ -2979,6 +2985,179 @@ section .email-subscription p {
     width: 360px;
     height: 50px;
 }
+
+/* Order History */
+.order-history-page {
+    background-color: #f5f6f8;
+}
+
+.order-history-page .layout {
+    padding: 40px 70px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.order-history-page .layout > div:nth-child(1) {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 35px;
+}
+
+.order-history-page .layout > div:nth-child(2) {
+    flex: 2;
+}
+
+.order-history-page .layout > div:nth-child(1) > div:nth-child(1) {
+    box-shadow: 0px 8px 32px rgba(186, 186, 186, 0.08);
+    background-color: #ffffff;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.order-history-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(1)
+    > div:nth-child(1) {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0.75px;
+    text-align: start;
+    color: #4e4b66;
+}
+
+.order-history-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(1)
+    > div:nth-child(3) {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.75px;
+    color: #14142b;
+}
+
+.order-history-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(1)
+    > div:nth-child(4) {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.75px;
+    color: #4e4b66;
+}
+
+.order-history-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(1)
+    > div:nth-child(6) {
+    background: #5f2eea;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    width: 100px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-history-page
+    .layout
+    > div:nth-child(1)
+    > div:nth-child(1)
+    > div:nth-child(6)
+    a {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.75px;
+    color: #f7f7fc;
+    text-decoration: none;
+}
+
+.order-history-page .layout > div:nth-child(2) > div:nth-child(1) {
+    background: #ffffff;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 25px;
+}
+
+.order-history-page
+    .layout
+    > div:nth-child(2)
+    > div:nth-child(1)
+    > div:nth-child(1)
+    > a {
+    margin-right: 25px;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 0.75px;
+    color: #aaaaaa;
+    text-decoration: none;
+}
+
+.order-history-page
+    .layout
+    > div:nth-child(2)
+    > div:nth-child(1)
+    > div:nth-child(2) {
+    border-bottom: 2px solid #5f2eea;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 0.75px;
+    color: #14142b;
+}
+
+.order-history-page .layout > div:nth-child(2) > div {
+    background: #ffffff;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    padding: 25px;
+    margin-top: 20px;
+}
+
 
 @media screen and (max-width: 880px) {
     .container .left-side {

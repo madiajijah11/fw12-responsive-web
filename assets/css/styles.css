@@ -1981,12 +1981,15 @@ section .email-subscription p {
     color: #5f2eea;
 }
 
+.payment-page {
+    background-color: #f5f6f8;
+}
+
 .payment-page .layout {
     padding: 40px 130px;
     display: flex;
     flex-direction: row;
     position: relative;
-    background-color: #f5f6f8;
 }
 
 .payment-page .layout > div:nth-child(1) {

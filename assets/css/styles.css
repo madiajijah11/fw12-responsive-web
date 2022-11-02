@@ -3158,6 +3158,127 @@ section .email-subscription p {
     margin-top: 20px;
 }
 
+.order-history-page .layout > div:nth-child(2) > div > div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.order-history-page .layout > div:nth-child(2) > div > div:nth-child(1) > div {
+    flex: 1;
+}
+
+.order-history-page
+    .layout
+    > div:nth-child(2)
+    > div
+    > div:nth-child(1)
+    > div
+    > div:nth-child(1) {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.75px;
+    color: #aaaaaa;
+}
+
+.order-history-page
+    .layout
+    > div:nth-child(2)
+    > div
+    > div:nth-child(1)
+    > div
+    > div:nth-child(2) {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0.75px;
+    color: #000000;
+}
+
+.order-history-page
+    .layout
+    > div:nth-child(2)
+    > div
+    > div:nth-child(1)
+    > div:nth-child(2) {
+    text-align: right;
+}
+
+.order-history-page .layout > div:nth-child(2) > div > div:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.order-history-page .layout > div:nth-child(2) > div > div:nth-child(3) > div {
+    flex: 1;
+}
+
+.order-history-page
+    .layout
+    > div:nth-child(2)
+    > div
+    > div:nth-child(3)
+    > div:nth-child(1)
+    > div:nth-child(1).used {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #6e7191;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    padding: 10px 20px;
+    float: left;
+}
+
+.order-history-page
+    .layout
+    > div:nth-child(2)
+    > div
+    > div:nth-child(3)
+    > div:nth-child(1)
+    > div:nth-child(1).used.active {
+    background-color: #00ba88;
+}
+
+.order-history-page
+    .layout
+    > div:nth-child(2)
+    > div
+    > div:nth-child(3)
+    > div:nth-child(1)
+    > div:nth-child(1).used
+    a {
+    text-decoration: none;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.75px;
+    color: #f7f7fc;
+}
+
+.order-history-page
+    .layout
+    > div:nth-child(2)
+    > div
+    > div:nth-child(3)
+    > div:nth-child(2) {
+    text-align: right;
+}
 
 @media screen and (max-width: 880px) {
     .container .left-side {

@@ -416,6 +416,7 @@ a.link {
     border: 1px solid #5f2eea;
     display: none;
     position: absolute;
+    z-index: 1;
 }
 
 .nav-container .nav-action div.signed div.active:hover div {
@@ -3178,7 +3179,7 @@ section .email-subscription p {
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
     padding: 25px;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .order-history-page .layout > div:nth-child(2) > div > div:nth-child(1) {

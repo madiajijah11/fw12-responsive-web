@@ -1,3 +1,19 @@
+// show password
+const password = document.querySelector("#password");
+const icon = document.querySelector(".fa-eye");
+icon.addEventListener("click", () => {
+    if (password.type === "password") {
+        password.type = "text";
+        icon.classList.remove("fa-eye");
+        icon.classList.add("fa-eye-slash");
+    } else {
+        password.type = "password";
+        icon.classList.remove("fa-eye-slash");
+        icon.classList.add("fa-eye");
+    }
+});
+
+// validate username and password
 const form = document.querySelector(".form-control");
 form.addEventListener("submit", (e) => {
     e.preventDefault();

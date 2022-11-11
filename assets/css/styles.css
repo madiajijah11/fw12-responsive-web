@@ -136,7 +136,7 @@ div.form-input .icon {
     background-color: #5f2eea;
     border: none;
     color: white;
-    padding: 16px 32px;
+    padding: 16px 0;
     text-align: center;
     text-decoration: none;
     display: block;
@@ -148,6 +148,8 @@ div.form-input .icon {
     -moz-border-radius: 16px;
     -ms-border-radius: 16px;
     border-radius: 16px;
+    height: auto;
+    width: 100%;
 }
 
 .image-wrap {
@@ -3445,6 +3447,25 @@ section .email-subscription p {
     margin-top: 40px;
 }
 
+@media screen and (max-width: 425px) {
+    .first-section {
+        flex-direction: column;
+    }
+
+    section .email-subscription .input-group {
+        flex-direction: column;
+    }
+
+    section .email-subscription .input-group .input-email {
+        margin-bottom: 16px;
+        margin-right: 0;
+    }
+
+    section .email-subscription .input-group button {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .container .left-side {
         display: none;
@@ -3649,8 +3670,8 @@ section .email-subscription p {
         display: none;
     }
 
-    .footer > div:nth-child(1) > div.menu {
-        display: none;
+    .footer > div:nth-child(1) {
+        flex-direction: column;
     }
 
     .movie-now-showing .movie div {

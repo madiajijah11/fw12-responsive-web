@@ -9,7 +9,6 @@ form.addEventListener("submit", (e) => {
     }
     // show alert bellow the form with red color
     const alert = document.createElement("div");
-    alert.classList.add("alert");
     alert.style.color = "red";
     alert.style.border = "1px solid red";
     alert.style.padding = "10px";

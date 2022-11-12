@@ -15,13 +15,13 @@ icon.addEventListener("click", () => {
 
 // validate username and password
 const form = document.querySelector(".form-control");
+const emailValue = document.getElementById("email").value;
+const passwordValue = document.getElementById("password").value;
+const alert = document.createElement("div");
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-    const alert = document.createElement("div");
     // check if email and password are true
-    if (email === "admin@gmail.com" && password === "admin123") {
+    if (emailValue === "admin@gmail.com" && passwordValue === "admin123") {
         window.location.href = "homepage.html";
     } else {
         // show alert bellow the form with red color

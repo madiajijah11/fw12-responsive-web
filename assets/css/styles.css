@@ -526,7 +526,7 @@ a.link {
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
-    margin: 0px 24px;
+    margin: 24px 24px;
     padding: 32px;
     position: relative;
 }
@@ -669,7 +669,7 @@ a.link {
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
-    margin: 0px 24px;
+    margin: 24px 24px;
     display: flex;
     flex-direction: column;
     align-items: center;

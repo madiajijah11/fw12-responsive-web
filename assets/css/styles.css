@@ -3870,9 +3870,6 @@ section .email-subscription p {
         display: none;
     }
 
-    .view-all-page > div:nth-child(3) {
-    }
-
     .movie-month {
         justify-content: unset;
         align-items: unset;

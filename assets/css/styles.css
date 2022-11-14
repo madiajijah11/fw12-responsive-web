@@ -320,6 +320,10 @@ a.link {
     color: #5f2eea;
 }
 
+.nav-container-mobile {
+    display: none;
+}
+
 .nav-container {
     display: flex;
     flex-direction: row;
@@ -678,7 +682,7 @@ a.link {
     align-items: center;
     padding: 32px 32px 0 32px;
     height: auto;
-    width: 100%;
+    width: auto;
 }
 
 /* .movie-now-showing .movie img {
@@ -734,7 +738,7 @@ a.link {
     display: flex;
     flex-direction: row;
     align-items: center;
-    overflow-x: auto;
+    overflow: auto;
     justify-content: center;
     margin: 35px 0;
 }
@@ -971,7 +975,6 @@ section .email-subscription p {
     background-color: white;
     padding: 45px 0;
     margin: 0 70px 40px 70px;
-    width: fit-content;
     align-self: center;
 }
 
@@ -3450,9 +3453,10 @@ section .email-subscription p {
     margin-top: 40px;
 }
 
-@media screen and (max-width: 425px) {
+@media only screen and (max-width: 425px) {
     .first-section {
         flex-direction: column;
+        margin: 0 35px;
     }
 
     section .email-subscription .input-group {
@@ -3467,16 +3471,117 @@ section .email-subscription p {
     section .email-subscription .input-group button {
         width: 100%;
     }
+
+    .nav-container-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-container-mobile hr {
+        width: 100%;
+    }
+
+    .nav-container-mobile > img {
+        margin-top: 20px;
+    }
+
+    .nav-container-mobile .nav-menu-mobile {
+        align-items: center;
+    }
+
+    .nav-container-mobile .nav-menu-mobile a {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        margin: 5px 0;
+        border: 1px solid #dedede;
+        border-radius: 0.2rem;
+        -webkit-border-radius: 0.2rem;
+        -moz-border-radius: 0.2rem;
+        -ms-border-radius: 0.2rem;
+        -o-border-radius: 0.2rem;
+        width: 300px;
+        padding: 0.5rem 1rem;
+    }
+
+    .nav-container-mobile .nav-action-mobile {
+        display: flex;
+        flex-direction: column;
+        margin: 16px 0;
+    }
+
+    .nav-container-mobile .nav-action-mobile a {
+        text-decoration: none;
+        color: white;
+        background-color: #5f2eea;
+        padding: 0.5rem 1rem;
+        border-radius: 0.2rem;
+        -webkit-border-radius: 0.2rem;
+        -moz-border-radius: 0.2rem;
+        -ms-border-radius: 0.2rem;
+        -o-border-radius: 0.2rem;
+        font-family: "Mulish";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        margin: 2px;
+        width: 300px;
+        text-align: center;
+    }
+
+    .nav-container {
+        display: none;
+    }
+
+    .second-section .movie-now-showing {
+        flex-direction: column;
+        margin: 0 50px;
+    }
+
+    .third-section .movie-now-showing {
+        flex-direction: column;
+        margin: 0 25px;
+    }
+
+    .footer > div:nth-child(1) {
+        flex-direction: column;
+    }
+
+    .second-section .header {
+        margin: 0 35px;
+    }
+
+    .third-section .header {
+        margin: 0 35px;
+    }
+
+    section .email-subscription {
+        margin: 0 35px;
+    }
+
+    .third-section .header :nth-child(1) {
+        margin: 25px 0;
+    }
+
+    .third-section .header :nth-child(2) {
+        margin: 25px 0;
+    }
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .container .left-side {
         display: none;
     }
 
     .movie-month {
-        justify-content: center;
-        width: 100%;
+        justify-content: unset;
+        align-items: unset;
+        margin: 35px 35px;
     }
 
     .movie-month .movie-btn {
@@ -3497,7 +3602,7 @@ section .email-subscription p {
     }
 
     .second-section .movie-now-showing .movie {
-        margin: 20px;
+        margin: 18px 0;
     }
 
     .movie-now-showing {
@@ -3512,6 +3617,7 @@ section .email-subscription p {
 
     .movie-details-page > div:nth-child(1) {
         flex-direction: column;
+        padding: 40px 35px;
     }
 
     .movie-details-page > div:nth-child(1) > div:nth-child(1) {
@@ -3529,6 +3635,10 @@ section .email-subscription p {
         > div:nth-child(1)
         > div:nth-child(3)
         > div:nth-child(2) {
+        flex-direction: column;
+    }
+
+    .movie-details-page-2 > div:nth-child(1) > div:nth-child(2) {
         flex-direction: column;
     }
 
@@ -3731,7 +3841,7 @@ section .email-subscription p {
     }
 }
 
-@media screen and (min-width: 769px) {
+@media only screen and (max-width: 1024px) {
     .image-wrap .image-overlay.column > div > img {
         width: 276px;
         height: 104px;

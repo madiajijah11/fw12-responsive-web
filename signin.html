@@ -67,8 +67,8 @@
     </body>
     <script>
         // show password
-        const password = document.querySelector("#password");
-        const icon = document.querySelector("#icon");
+        const password = document.getElementById("password");
+        const icon = document.getElementById("icon");
         icon.addEventListener("click", () => {
             if (password.type === "password") {
                 password.type = "text";
@@ -103,7 +103,7 @@
                     alert.remove();
                 }, 3000);
                 setInterval(() => {
-                    window.location.href = "index.html";
+                    window.location.href = "homepage.html";
                 }, 3000);
                 return;
             } else {

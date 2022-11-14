@@ -528,7 +528,6 @@ a.link {
     -o-border-radius: 8px;
     margin: 24px 24px;
     padding: 32px;
-    position: relative;
 }
 
 .second-section .movie-now-showing .movie.active:hover {
@@ -539,6 +538,7 @@ a.link {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .second-section .movie-now-showing .movie.active > div {
@@ -560,6 +560,9 @@ a.link {
     height: 100%;
     margin: 0;
     padding: 0;
+    isolation: auto;
+    isolation: isolate;
+    z-index: 2;
 }
 
 .second-section .movie-now-showing .movie.active div div:nth-child(1) {

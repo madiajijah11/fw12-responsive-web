@@ -358,21 +358,31 @@
             // put div inside element with id movie-now-showing
             movieNowShowing.appendChild(div);
             const img = document.createElement("img");
+            // create element img and put inside div
             div.appendChild(img);
+            // set attribute src and alt
             img.setAttribute("src", movie.picture);
             img.setAttribute("alt", movie.alt);
             const newDiv = document.createElement("div");
+            // create element div and put inside div
             div.appendChild(newDiv);
             const title = document.createElement("div");
+            // create element div and put inside newDiv
             newDiv.appendChild(title);
+            // set content to title
             title.innerHTML = movie.title;
             const p = document.createElement("p");
+            // create element p and put inside newDiv
             newDiv.appendChild(p);
+            // set content to p
             p.innerHTML = movie.genre;
             const newDiv1 = document.createElement("div");
+            // create element div and put inside div
             newDiv.appendChild(newDiv1);
             const a = document.createElement("a");
+            // create element a and put inside newDiv1
             newDiv1.appendChild(a);
+            // set a attribute and content
             a.setAttribute("href", "movie-details.html");
             a.innerHTML = "Details";
         });

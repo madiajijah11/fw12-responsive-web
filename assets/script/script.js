@@ -54,7 +54,10 @@ if (window.location.pathname == "/signin.html") {
     });
 }
 
-if (window.location.pathname == "/index.html") {
+if (
+    window.location.pathname == "/index.html" ||
+    window.location.pathname === "/"
+) {
     // array movie now showing
     const nowShowing = [
         {

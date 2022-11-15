@@ -2689,7 +2689,6 @@ section .email-subscription p {
 .profile-page .layout > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) {
     display: flex;
     flex-direction: row;
-    align-items: center;
 }
 
 .profile-page
@@ -2750,7 +2749,6 @@ section .email-subscription p {
 .profile-page .layout > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) {
     display: flex;
     flex-direction: row;
-    align-items: center;
     margin-top: 10px;
 }
 
@@ -2818,7 +2816,6 @@ section .email-subscription p {
     > div:nth-child(2) {
     display: flex;
     flex-direction: row;
-    align-items: center;
     border-radius: 16px;
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;
@@ -2826,19 +2823,6 @@ section .email-subscription p {
     -o-border-radius: 16px;
     background: #fcfdfe;
     border: 1px solid #dedede;
-    height: 65px;
-    width: 100%;
-}
-
-.profile-page
-    .layout
-    > div:nth-child(2)
-    > div:nth-child(2)
-    > div:nth-child(4)
-    > div:nth-child(2)
-    > div:nth-child(2)
-    > input:nth-child(2) {
-    width: 180px;
 }
 
 .profile-page
@@ -2851,8 +2835,8 @@ section .email-subscription p {
     > input:nth-child(1) {
     border: none;
     border-right: 1px solid #dedede;
-    width: 50px;
-    margin-left: 20px;
+    width: 70px;
+    padding: 20px;
     background-color: transparent;
 }
 
@@ -2866,8 +2850,9 @@ section .email-subscription p {
     > input:nth-child(2) {
     border: none;
     border-left: 1px solid #dedede;
-    padding-left: 20px;
+    padding: 20px;
     background-color: transparent;
+    width: 100%;
 }
 
 .profile-page .layout > div:nth-child(2) > div:nth-child(3) {

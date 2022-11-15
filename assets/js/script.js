@@ -327,3 +327,52 @@ if (window.location.pathname == "/homepage.html") {
         a.innerHTML = "Details";
     });
 }
+
+if (window.location.pathname == "/view-all.html") {
+    const movieLists = [
+        {
+            id: 1,
+            picture: "/assets/images/Rectangle-139.png",
+            title: "Black Widow",
+            genre: "Action, Adventure, Sci-Fi",
+        },
+        {
+            id: 2,
+            picture: "/assets/images/Rectangle-139.png",
+            title: "Black Widow",
+            genre: "Action, Adventure, Sci-Fi",
+        },
+        {
+            id: 3,
+            picture: "/assets/images/Rectangle-139.png",
+            title: "Black Widow",
+            genre: "Action, Adventure, Sci-Fi",
+        },
+        {
+            id: 4,
+            picture: "/assets/images/Rectangle-139.png",
+            title: "Black Widow",
+            genre: "Action, Adventure, Sci-Fi",
+        },
+    ];
+
+    const movieList = document.querySelectorAll("#movie-list");
+    movieLists.forEach((movie) => {
+        const movieItem = document.createElement("div");
+        movieItem.classList.add("movie");
+        // declare every element inside backtick
+        movieItem.innerHTML = `
+                <img src="${movie.picture}" alt="${movie.title}" />
+                <div>${movie.title}</div>
+                <p>${movie.genre}</p>
+                <div>
+                    <a href="movie-details.html"> Details </a>
+                </div>
+            `;
+        console.log(movieList);
+        // put movieItem inside movieList
+        movieList.forEach((list) => {
+            list.appendChild(movieItem.cloneNode(true));
+        });
+    });
+}

@@ -3918,7 +3918,6 @@ section .email-subscription p {
     .movie-now-showing {
         flex-direction: column;
         margin: 0 50px;
-        overflow: hidden;
     }
 
     .movie-now-showing .movie {
@@ -4232,7 +4231,6 @@ section .email-subscription p {
     }
 
     .movie-now-showing {
-        overflow: auto;
         align-items: unset;
         justify-content: unset;
     }

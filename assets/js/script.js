@@ -105,6 +105,7 @@ if (
         div.appendChild(img);
         img.setAttribute("src", movie.picture);
         img.setAttribute("alt", movie.alt);
+        img.setAttribute("title", movie.alt);
     });
 
     // select parent element

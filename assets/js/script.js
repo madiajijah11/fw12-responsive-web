@@ -109,46 +109,32 @@ if (
 
     // select parent element
     const upcomingMovie = document.getElementById("upcoming-movie");
-
-    const url =
-            "https://api.themoviedb.org/3/movie/upcoming?api_key=40a3fd368d6249931e24ee7f758f6377&language=en-US&page=15",
-        genres =
-            "https://api.themoviedb.org/3/genre/movie/list?api_key=40a3fd368d6249931e24ee7f758f6377&language=en-US";
+    // api endpoint
+    const API_URL = "https://imdb-api.com/en/API/ComingSoon/k_fm8jgts3";
 
     // Make the HTTP Api request using async/await
     const fetchAsync = async () => {
-        const movie = await fetch(url);
-        const genre = await fetch(genres);
-        console.log(genre);
-        const dataMovie = await movie.json();
-        const dataGenre = await genre.json();
-        console.log(dataMovie);
-        const getMovie = dataMovie.results;
-        getMovie.forEach((movie) => {
+        const req = await fetch(API_URL);
+        const res = await req.json();
+        res.items.forEach((movie) => {
+            // create element div
             const div = document.createElement("div");
+            // add class movie to div
             div.classList.add("movie");
+            // put div inside element with id upcoming-movie
             upcomingMovie.appendChild(div);
             const img = document.createElement("img");
             div.appendChild(img);
-            img.setAttribute(
-                "src",
-                `https://www.themoviedb.org/t/p/w300_and_h450_bestv2${movie.poster_path}`
-            );
+            // set src and alt attribute
+            img.setAttribute("src", movie.image);
+            img.setAttribute("alt", movie.title);
+            img.setAttribute("title", movie.title);
             const title = document.createElement("div");
             div.appendChild(title);
             title.innerHTML = movie.title;
             const p = document.createElement("p");
             div.appendChild(p);
-            // get genre id from movie then find genre name from genre api
-            movie.genre_ids.forEach((id) => {
-                dataGenre.genres.forEach((genre) => {
-                    // if id from movie equal id from genre
-                    if (id === genre.id) {
-                        // put genre name inside p
-                        p.innerHTML += `${genre.name} `;
-                    }
-                });
-            });
+            p.innerHTML = movie.genres;
             const details = document.createElement("div");
             div.appendChild(details);
             const a = document.createElement("a");
@@ -161,7 +147,6 @@ if (
 }
 
 if (window.location.pathname == "/homepage.html") {
-    // array movie now showing
     const nowShowing = [
         {
             id: 1,
@@ -218,6 +203,7 @@ if (window.location.pathname == "/homepage.html") {
         // set attribute src and alt
         img.setAttribute("src", movie.picture);
         img.setAttribute("alt", movie.alt);
+        img.setAttribute("title", movie.title);
         const newDiv = document.createElement("div");
         // create element div and put inside div
         div.appendChild(newDiv);
@@ -292,6 +278,8 @@ if (window.location.pathname == "/homepage.html") {
         const img = document.createElement("img");
         div.appendChild(img);
         img.setAttribute("src", movie.picture);
+        img.setAttribute("alt", movie.alt);
+        img.setAttribute("title", movie.title);
         const title = document.createElement("div");
         div.appendChild(title);
         title.innerHTML = movie.title;
@@ -342,6 +330,7 @@ if (window.location.pathname == "/view-all.html") {
         const img = document.createElement("img");
         img.setAttribute("src", movie.picture);
         img.setAttribute("alt", movie.title);
+        img.setAttribute("title", movie.title);
         movieItem.appendChild(img);
         const div = document.createElement("div");
         div.innerHTML = movie.title;

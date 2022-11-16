@@ -1,4 +1,7 @@
-if (window.location.pathname == "/signin.html") {
+if (
+    window.location.pathname == "/signin.html" ||
+    window.location.pathname == "/signup.html"
+) {
     // show password
     const password = document.getElementById("password");
     const icon = document.getElementById("icon");
@@ -114,50 +117,46 @@ if (
 
     // Make the HTTP Api request using async/await
     const fetchAsync = async () => {
-        try {
-            const movie = await fetch(url);
-            const genre = await fetch(genres);
-            const dataMovie = await movie.json();
-            const dataGenre = await genre.json();
-            console.log(dataMovie);
-            const getMovie = dataMovie.results;
-            getMovie.forEach((movie) => {
-                const div = document.createElement("div");
-                div.classList.add("movie");
-                upcomingMovie.appendChild(div);
-                const img = document.createElement("img");
-                div.appendChild(img);
-                img.setAttribute(
-                    "src",
-                    `https://www.themoviedb.org/t/p/w300_and_h450_bestv2${movie.poster_path}`
-                );
-                const title = document.createElement("div");
-                div.appendChild(title);
-                title.innerHTML = movie.title;
-                const p = document.createElement("p");
-                div.appendChild(p);
-                // get genre id from movie then find genre name from genre api
-                movie.genre_ids.forEach((id) => {
-                    dataGenre.genres.forEach((genre) => {
-                        // if id from movie equal id from genre
-                        if (id === genre.id) {
-                            // put genre name inside p
-                            p.innerHTML += `${genre.name} `;
-                        }
-                    });
+        const movie = await fetch(url);
+        const genre = await fetch(genres);
+        console.log(genre);
+        const dataMovie = await movie.json();
+        const dataGenre = await genre.json();
+        console.log(dataMovie);
+        const getMovie = dataMovie.results;
+        getMovie.forEach((movie) => {
+            const div = document.createElement("div");
+            div.classList.add("movie");
+            upcomingMovie.appendChild(div);
+            const img = document.createElement("img");
+            div.appendChild(img);
+            img.setAttribute(
+                "src",
+                `https://www.themoviedb.org/t/p/w300_and_h450_bestv2${movie.poster_path}`
+            );
+            const title = document.createElement("div");
+            div.appendChild(title);
+            title.innerHTML = movie.title;
+            const p = document.createElement("p");
+            div.appendChild(p);
+            // get genre id from movie then find genre name from genre api
+            movie.genre_ids.forEach((id) => {
+                dataGenre.genres.forEach((genre) => {
+                    // if id from movie equal id from genre
+                    if (id === genre.id) {
+                        // put genre name inside p
+                        p.innerHTML += `${genre.name} `;
+                    }
                 });
-                const details = document.createElement("div");
-                div.appendChild(details);
-                const a = document.createElement("a");
-                details.appendChild(a);
-                a.setAttribute("href", "movie-details.html");
-                a.innerHTML = "Details";
             });
-        } catch (error) {
-            console.error(error);
-        }
+            const details = document.createElement("div");
+            div.appendChild(details);
+            const a = document.createElement("a");
+            details.appendChild(a);
+            a.setAttribute("href", "movie-details.html");
+            a.innerHTML = "Details";
+        });
     };
-
     fetchAsync();
 }
 

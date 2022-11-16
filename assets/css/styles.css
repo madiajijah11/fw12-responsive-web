@@ -659,10 +659,25 @@ a.link {
 .movie-now-showing {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     margin: 0 35px 50px 35px;
     position: relative;
+    overflow: auto;
+    justify-content: space-between;
+}
+
+.movie-now-showing::before,
+.movie-now-showing::after {
+    content: "";
+}
+
+.movie-now-showing .movie img {
+    width: 159px;
+    height: 244px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .movie-now-showing .movie {
@@ -678,7 +693,9 @@ a.link {
     align-items: center;
     padding: 32px 32px 0 32px;
     height: fit-content;
-    width: auto;
+    width: fit-content;
+    text-align: center;
+    white-space: nowrap;
 }
 
 /* .movie-now-showing .movie img {
@@ -714,7 +731,7 @@ a.link {
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
     padding: 8px 16px;
-    margin: 32px;
+    margin: 0 32px 25px 32px;
     width: 70%;
     text-align: center;
 }
@@ -3848,6 +3865,10 @@ section .email-subscription p {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .movie-now-showing .movie {
+        white-space: normal;
     }
 }
 

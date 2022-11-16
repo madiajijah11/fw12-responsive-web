@@ -104,78 +104,61 @@ if (
         img.setAttribute("alt", movie.alt);
     });
 
-    // array upcoming movie
-    const upcoming = [
-        {
-            id: 1,
-            picture: "/assets/images/Rectangle-139.png",
-            alt: "BlackWidow",
-            title: "Black Widow",
-            genre: "Action, Adventure, Sci-Fi",
-        },
-        {
-            id: 2,
-            picture: "/assets/images/Rectangle-139-1.png",
-            alt: "TheWitches",
-            title: "The Witches",
-            genre: "Adventure, Comedy, Family",
-        },
-        {
-            id: 3,
-            picture: "/assets/images/Rectangle-139-2.png",
-            alt: "Tenet",
-            title: "Tenet",
-            genre: "Action, Sci-Fi",
-        },
-        {
-            id: 4,
-            picture: "/assets/images/Rectangle-139.png",
-            alt: "BlackWidow",
-            title: "Black Widow",
-            genre: "Action, Adventure, Sci-Fi",
-        },
-        {
-            id: 5,
-            picture: "/assets/images/Rectangle-139-1.png",
-            alt: "TheWitches",
-            title: "The Witches",
-            genre: "Adventure, Comedy, Family",
-        },
-    ];
-
     // select parent element
     const upcomingMovie = document.getElementById("upcoming-movie");
 
-    // for each movie upcoming
-    upcoming.forEach((movie) => {
-        // create element div
-        const div = document.createElement("div");
-        // add class movie to div
-        div.classList.add("movie");
-        // put div inside element with id upcoming-movie
-        upcomingMovie.appendChild(div);
-        const img = document.createElement("img");
-        // put img inside div
-        div.appendChild(img);
-        // set attribute to img
-        img.setAttribute("src", movie.picture);
-        const title = document.createElement("div");
-        // put title inside div
-        div.appendChild(title);
-        // set content to title
-        title.innerHTML = movie.title;
-        // create element p
-        const p = document.createElement("p");
-        // put element p inside div
-        div.appendChild(p);
-        p.innerHTML = movie.genre;
-        const details = document.createElement("div");
-        div.appendChild(details);
-        const a = document.createElement("a");
-        details.appendChild(a);
-        a.setAttribute("href", "movie-details.html");
-        a.innerHTML = "Details";
-    });
+    const url =
+            "https://api.themoviedb.org/3/movie/upcoming?api_key=40a3fd368d6249931e24ee7f758f6377&language=en-US&page=20",
+        genres =
+            "https://api.themoviedb.org/3/genre/movie/list?api_key=40a3fd368d6249931e24ee7f758f6377&language=en-US";
+
+    // Make the HTTP Api request using async/await
+    const fetchAsync = async () => {
+        try {
+            const movie = await fetch(url);
+            const genre = await fetch(genres);
+            const dataMovie = await movie.json();
+            const dataGenre = await genre.json();
+            console.log(dataMovie);
+            const getMovie = dataMovie.results;
+            getMovie.forEach((movie) => {
+                const div = document.createElement("div");
+                div.classList.add("movie");
+                upcomingMovie.appendChild(div);
+                const img = document.createElement("img");
+                div.appendChild(img);
+                img.setAttribute(
+                    "src",
+                    `https://www.themoviedb.org/t/p/w300_and_h450_bestv2${movie.poster_path}`
+                );
+                const title = document.createElement("div");
+                div.appendChild(title);
+                title.innerHTML = movie.title;
+                const p = document.createElement("p");
+                div.appendChild(p);
+                // get genre id from movie then find genre name from genre api
+                movie.genre_ids.forEach((id) => {
+                    dataGenre.genres.forEach((genre) => {
+                        // if id from movie equal id from genre
+                        if (id === genre.id) {
+                            // put genre name inside p
+                            p.innerHTML += `${genre.name} `;
+                        }
+                    });
+                });
+                const details = document.createElement("div");
+                div.appendChild(details);
+                const a = document.createElement("a");
+                details.appendChild(a);
+                a.setAttribute("href", "movie-details.html");
+                a.innerHTML = "Details";
+            });
+        } catch (error) {
+            console.error(error);
+        }
+    };
+
+    fetchAsync();
 }
 
 if (window.location.pathname == "/homepage.html") {
@@ -304,11 +287,8 @@ if (window.location.pathname == "/homepage.html") {
 
     // for each movie upcoming
     upcoming.forEach((movie) => {
-        // create element div
         const div = document.createElement("div");
-        // add class movie to div
         div.classList.add("movie");
-        // put div inside element with id upcoming-movie
         upcomingMovie.appendChild(div);
         const img = document.createElement("img");
         div.appendChild(img);
@@ -360,17 +340,23 @@ if (window.location.pathname == "/view-all.html") {
     movieLists.forEach((movie) => {
         const movieItem = document.createElement("div");
         movieItem.classList.add("movie");
-        // declare every element inside backtick
-        movieItem.innerHTML = `
-                <img src="${movie.picture}" alt="${movie.title}" />
-                <div>${movie.title}</div>
-                <p>${movie.genre}</p>
-                <div>
-                    <a href="movie-details.html"> Details </a>
-                </div>
-            `;
-        console.log(movieList);
-        // put movieItem inside movieList
+        const img = document.createElement("img");
+        img.setAttribute("src", movie.picture);
+        img.setAttribute("alt", movie.title);
+        movieItem.appendChild(img);
+        const div = document.createElement("div");
+        div.innerHTML = movie.title;
+        movieItem.appendChild(div);
+        const p = document.createElement("p");
+        p.innerHTML = movie.genre;
+        movieItem.appendChild(p);
+        const div1 = document.createElement("div");
+        movieItem.appendChild(div1);
+        const a = document.createElement("a");
+        a.setAttribute("href", "movie-details.html");
+        a.innerHTML = "Details";
+        div1.appendChild(a);
+        // put movieItem inside movieList with id movie-list
         movieList.forEach((list) => {
             list.appendChild(movieItem.cloneNode(true));
         });

@@ -111,7 +111,7 @@ if (
     const upcomingMovie = document.getElementById("upcoming-movie");
 
     const url =
-            "https://api.themoviedb.org/3/movie/upcoming?api_key=40a3fd368d6249931e24ee7f758f6377&language=en-US&page=20",
+            "https://api.themoviedb.org/3/movie/upcoming?api_key=40a3fd368d6249931e24ee7f758f6377&language=en-US&page=15",
         genres =
             "https://api.themoviedb.org/3/genre/movie/list?api_key=40a3fd368d6249931e24ee7f758f6377&language=en-US";
 

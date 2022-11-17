@@ -118,6 +118,7 @@ if (
         const req = await fetch(API_URL);
         const res = await req.json();
         const movie = res.items;
+        console.log(movie);
         // iterate through the array using while
         let i = 0;
         while (i <= 6) {
@@ -138,7 +139,7 @@ if (
             title.innerHTML = movie[i].title;
             const elementGenre = document.createElement("p");
             div.appendChild(elementGenre);
-            p.innerHTML = movie[i].genres;
+            elementGenre.innerHTML = movie[i].genres;
             const details = document.createElement("div");
             div.appendChild(details);
             const linkDetail = document.createElement("a");

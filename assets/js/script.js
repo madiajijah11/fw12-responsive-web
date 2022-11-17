@@ -136,15 +136,15 @@ if (
             const title = document.createElement("div");
             div.appendChild(title);
             title.innerHTML = movie[i].title;
-            const p = document.createElement("p");
-            div.appendChild(p);
+            const elementGenre = document.createElement("p");
+            div.appendChild(elementGenre);
             p.innerHTML = movie[i].genres;
             const details = document.createElement("div");
             div.appendChild(details);
-            const a = document.createElement("a");
-            details.appendChild(a);
-            a.href = "movie-details.html";
-            a.innerHTML = "Details";
+            const linkDetail = document.createElement("a");
+            details.appendChild(linkDetail);
+            linkDetail.href = "movie-details.html";
+            linkDetail.innerHTML = "Details";
             i++;
         }
     };
@@ -217,20 +217,20 @@ if (window.location.pathname == "/homepage.html") {
         newDiv.appendChild(title);
         // set content to title
         title.innerHTML = movie.title;
-        const p = document.createElement("p");
+        const elementGenre = document.createElement("p");
         // create element p and put inside newDiv
-        newDiv.appendChild(p);
+        newDiv.appendChild(elementGenre);
         // set content to p
         p.innerHTML = movie.genre;
         const newDiv1 = document.createElement("div");
         // create element div and put inside div
         newDiv.appendChild(newDiv1);
-        const a = document.createElement("a");
+        const linkDetail = document.createElement("a");
         // create element a and put inside newDiv1
-        newDiv1.appendChild(a);
+        newDiv1.appendChild(linkDetail);
         // set a attribute and content
-        a.href = "movie-details.html";
-        a.innerHTML = "Details";
+        linkDetail.href = "movie-details.html";
+        linkDetail.innerHTML = "Details";
     });
 
     // array upcoming movie
@@ -293,10 +293,10 @@ if (window.location.pathname == "/homepage.html") {
         genre.innerHTML = movie.genre;
         const details = document.createElement("div");
         div.appendChild(details);
-        const a = document.createElement("a");
-        details.appendChild(a);
-        a.href = "movie-details.html";
-        a.innerHTML = "Details";
+        const linkDetail = document.createElement("a");
+        details.appendChild(linkDetail);
+        linkDetail.href = "movie-details.html";
+        linkDetail.innerHTML = "Details";
     });
 }
 
@@ -340,15 +340,15 @@ if (window.location.pathname == "/view-all.html") {
         const div = document.createElement("div");
         div.innerHTML = movie.title;
         movieItem.appendChild(div);
-        const p = document.createElement("p");
-        p.innerHTML = movie.genre;
+        const elementGenre = document.createElement("p");
+        elementGenre.innerHTML = movie.genre;
         movieItem.appendChild(p);
         const div1 = document.createElement("div");
         movieItem.appendChild(div1);
-        const a = document.createElement("a");
-        a.href = "movie-details.html";
-        a.innerHTML = "Details";
-        div1.appendChild(a);
+        const linkDetail = document.createElement("a");
+        linkDetail.href = "movie-details.html";
+        linkDetail.innerHTML = "Details";
+        div1.appendChild(linkDetail);
         // put movieItem inside movieList with id movie-list
         movieList.forEach((list) => {
             list.appendChild(movieItem.cloneNode(true));

@@ -103,9 +103,9 @@ if (
         movieNowShowing.appendChild(div);
         const img = document.createElement("img");
         div.appendChild(img);
-        img.setAttribute("src", movie.picture);
-        img.setAttribute("alt", movie.alt);
-        img.setAttribute("title", movie.alt);
+        img.src = movie.picture;
+        img.alt = movie.alt;
+        img.title = movie.alt;
     });
 
     // select parent element
@@ -117,7 +117,10 @@ if (
     const fetchAsync = async () => {
         const req = await fetch(API_URL);
         const res = await req.json();
-        res.items.forEach((movie) => {
+        const movie = res.items;
+        // iterate through the array using while
+        let i = 0;
+        while (i <= 6) {
             // create element div
             const div = document.createElement("div");
             // add class movie to div
@@ -127,22 +130,23 @@ if (
             const img = document.createElement("img");
             div.appendChild(img);
             // set src and alt attribute
-            img.setAttribute("src", movie.image);
-            img.setAttribute("alt", movie.title);
-            img.setAttribute("title", movie.title);
+            img.src = movie[i].image;
+            img.alt = movie[i].title;
+            img.title = movie[i].title;
             const title = document.createElement("div");
             div.appendChild(title);
-            title.innerHTML = movie.title;
+            title.innerHTML = movie[i].title;
             const p = document.createElement("p");
             div.appendChild(p);
-            p.innerHTML = movie.genres;
+            p.innerHTML = movie[i].genres;
             const details = document.createElement("div");
             div.appendChild(details);
             const a = document.createElement("a");
             details.appendChild(a);
-            a.setAttribute("href", "movie-details.html");
+            a.href = "movie-details.html";
             a.innerHTML = "Details";
-        });
+            i++;
+        }
     };
     fetchAsync();
 }
@@ -202,9 +206,9 @@ if (window.location.pathname == "/homepage.html") {
         // create element img and put inside div
         div.appendChild(img);
         // set attribute src and alt
-        img.setAttribute("src", movie.picture);
-        img.setAttribute("alt", movie.alt);
-        img.setAttribute("title", movie.title);
+        img.src = movie.picture;
+        img.alt = movie.alt;
+        img.title = movie.title;
         const newDiv = document.createElement("div");
         // create element div and put inside div
         div.appendChild(newDiv);
@@ -225,7 +229,7 @@ if (window.location.pathname == "/homepage.html") {
         // create element a and put inside newDiv1
         newDiv1.appendChild(a);
         // set a attribute and content
-        a.setAttribute("href", "movie-details.html");
+        a.href = "movie-details.html";
         a.innerHTML = "Details";
     });
 
@@ -278,9 +282,9 @@ if (window.location.pathname == "/homepage.html") {
         upcomingMovie.appendChild(div);
         const img = document.createElement("img");
         div.appendChild(img);
-        img.setAttribute("src", movie.picture);
-        img.setAttribute("alt", movie.alt);
-        img.setAttribute("title", movie.title);
+        img.src = movie.picture;
+        img.alt = movie.alt;
+        img.title = movie.title;
         const title = document.createElement("div");
         div.appendChild(title);
         title.innerHTML = movie.title;
@@ -291,7 +295,7 @@ if (window.location.pathname == "/homepage.html") {
         div.appendChild(details);
         const a = document.createElement("a");
         details.appendChild(a);
-        a.setAttribute("href", "movie-details.html");
+        a.href = "movie-details.html";
         a.innerHTML = "Details";
     });
 }
@@ -329,9 +333,9 @@ if (window.location.pathname == "/view-all.html") {
         const movieItem = document.createElement("div");
         movieItem.classList.add("movie");
         const img = document.createElement("img");
-        img.setAttribute("src", movie.picture);
-        img.setAttribute("alt", movie.title);
-        img.setAttribute("title", movie.title);
+        img.src = movie.picture;
+        img.alt = movie.title;
+        img.title = movie.title;
         movieItem.appendChild(img);
         const div = document.createElement("div");
         div.innerHTML = movie.title;
@@ -342,7 +346,7 @@ if (window.location.pathname == "/view-all.html") {
         const div1 = document.createElement("div");
         movieItem.appendChild(div1);
         const a = document.createElement("a");
-        a.setAttribute("href", "movie-details.html");
+        a.href = "movie-details.html";
         a.innerHTML = "Details";
         div1.appendChild(a);
         // put movieItem inside movieList with id movie-list

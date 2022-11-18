@@ -222,7 +222,7 @@ if (window.location.pathname == "/homepage.html") {
         // create element p and put inside newDiv
         newDiv.appendChild(elementGenre);
         // set content to p
-        p.innerHTML = movie.genre;
+        elementGenre.innerHTML = movie.genre;
         const newDiv1 = document.createElement("div");
         // create element div and put inside div
         newDiv.appendChild(newDiv1);
@@ -343,7 +343,7 @@ if (window.location.pathname == "/view-all.html") {
         movieItem.appendChild(div);
         const elementGenre = document.createElement("p");
         elementGenre.innerHTML = movie.genre;
-        movieItem.appendChild(p);
+        movieItem.appendChild(elementGenre);
         const div1 = document.createElement("div");
         movieItem.appendChild(div1);
         const linkDetail = document.createElement("a");

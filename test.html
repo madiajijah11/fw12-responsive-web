@@ -1,37 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-    </head>
-    <body></body>
-    <script>
-        const getMovieData = fetch(
-            "https://api.themoviedb.org/3/movie/upcoming?api_key=0425e48e1b84cac8b5d27b8c9980a9ba&language=en-US&page=1"
-        );
-        const genreData = fetch(
-            "https://api.themoviedb.org/3/genre/list?api_key=0425e48e1b84cac8b5d27b8c9980a9ba"
-        );
-
-        const proses = async () => {
-            const response = await getMovieData;
-            const data = await response.json();
-            const responseGenre = await genreData;
-            const dataGenre = await responseGenre.json();
-
-            let movie = data.results;
-            movie.forEach((el) => {
-                for (let i = 0; i < el.genre_ids.length; i++) {
-                    for (let j = 0; j < dataGenre.genres.length; j++) {
-                        if (el.genre_ids[i] === dataGenre.genres[j].id) {
-                            console.log(dataGenre.genres[j].name);
-                        }
-                    }
-                }
-            });
-        };
-        proses();
-    </script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
 </html>

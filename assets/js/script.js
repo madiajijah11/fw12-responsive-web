@@ -118,7 +118,6 @@ if (
         const req = await fetch(API_URL);
         const res = await req.json();
         const movie = res.items;
-        console.log(movie);
         // iterate through the array using while
         let i = 0;
         while (i <= 6) {
